@@ -2,7 +2,7 @@ import React from 'react'
 
 const Menu = () => {
   return (
-    <div className="bg-[#232f3e] flex items-center text-white gap-4 pl-5 h-10">
+    <div className="bg-[#232f3e] flex items-center text-white gap-4 pl-5 h-10 overflow-x-hidden md:overflow-visible">
       <p className="px-2 cursor-pointer border-2 border-transparent hover:border-white">All</p>
       <p className="px-2 cursor-pointer border-2 border-transparent hover:border-white">Fresh</p>
       <p className="px-2 cursor-pointer border-2 border-transparent hover:border-white">MX Player</p>

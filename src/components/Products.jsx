@@ -5,10 +5,11 @@ import { Link } from "react-router-dom";
 
 const Products = ({setPage}) => {
   return (
-    <div className="relative ml-2 mr-2">
+    <div className="bg-[#e3e6e6] overflow-x-hidden">
       <Curosal />
 
-      <div className="absolute bottom-[6%] left-0 w-full flex justify-center gap-4">
+    <div className="-mt-[350px] relative z-10">
+       <div className="max-w-[1500px] mx-auto px-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <ProductCard
           title="Revamp your home in style"
           images={[
@@ -54,6 +55,7 @@ const Products = ({setPage}) => {
         />
       </div>
     </div>
+  </div>
   );
 };
 

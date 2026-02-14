@@ -19,7 +19,7 @@ const Header = () => {
         {/* Hide location on small screens */}
         <div className="hidden md:flex items-center gap-1 border border-transparent hover:border-white p-1 cursor-pointer">
           <img className="w-5 h-5" src={locationIcon} alt="" />
-          <div className="flex flex-col leading-tight">
+          <div className="flex flex-col leading-tight overflow-hidden md:overflow-visible">
             <span className="text-gray-300 text-xs">
               Delivering to Mumbai 400001
             </span>
@@ -56,7 +56,7 @@ const Header = () => {
         </h2>
 
         {/* Sign in */}
-        <div className="hidden sm:block border border-transparent hover:border-white cursor-pointer p-2">
+        <div className="hidden sm:block border border-transparent hover:border-white cursor-pointer p-2 overflow-hidden md:overflow-visible">
           <p className="text-xs">Hello, sign in</p>
           <p className="font-bold text-sm">Account</p>
         </div>
